@@ -1,0 +1,619 @@
+/*General page stuff - starting point to edit from */
+
+html,
+body,
+div,
+a,
+p,
+img,
+ul,
+li,
+footer,
+header,
+section,
+h1,
+span,
+time,
+hr,
+hgroup,
+a img,
+form,
+input,
+h2,
+h3,
+h4,
+label,
+textarea,
+small {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+  /*outline: 1px dotted green;*/
+}
+
+header,
+section,
+footer {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 700;
+  -webkit-hyphens: none; 
+}
+
+body {
+  font-size: 80%;
+  color: #333;
+  font-family: 'Montserrat', sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -webkit-hyphens: auto;
+  line-height: 190%;
+  background: #fff;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+  }
+
+p {
+	margin-bottom: 1em;
+}
+
+a:-webkit-any-link {
+    color: inherit;
+    text-decoration: none;
+ }
+
+.live{
+	border: 2px solid #333;
+	padding: .5em .8em;
+}
+.live:focus, .live:hover{
+  color: #fff;
+  background-color: #333;
+}
+
+.dark .live {
+    border: solid 2px #fff;
+    color: #fff
+  }
+  
+.dark .live:focus, .dark .live:hover {
+    background: #fff;
+    color: #333
+  }
+
+.fullscreen {
+  width: 100%;
+  padding: 7em 0 8em 0;
+  position: relative;
+}
+
+#cursive-big {
+  font-family:'Grand Hotel', cursive;
+  font-size: 60px;
+  line-height: 120%;
+  }
+
+.cursive-little{
+    font-family: 'Grand Hotel', cursive;
+  }
+
+/*Masthead Navigation bar______________________________________________________________full */
+
+.masthead .fullscreen {
+  padding: 7em 0 7em 0;
+}
+
+.masthead {
+  width: 100%;
+  padding: 4em 1em 6em 1em;
+}
+
+.inner {
+  width: 94%;
+   /*max-width: 85em;*/
+  margin: 0 auto;
+  }
+
+/*(^ also in footer)*/
+
+.masthead h1 {
+  float: left;
+  line-height: 1em;
+  /*border: 1px solid #ee1;*/
+}
+
+.menu {
+  margin: -.9em 1em 1em 0;
+  float: right
+}
+.menu-inner{
+  	display: inherit;
+	  }
+
+.menu li {
+  display: inline;
+  padding: 0 0 0 3.6em;
+  float: right;
+  padding: .5em 1em 0 1em;
+  line-height: 1em;
+}
+.menu a {
+  display: inline-block;
+}
+
+.menu li:active{
+	text-decoration: underline;
+}
+
+/*Text boxes (including 1st welcome box)_________________________________________________full */
+
+.info h1{
+	margin-bottom: 1em;
+	}
+
+.we {
+    background: #09063D url(images/manda-face.png) left bottom fixed no-repeat;
+	background-size: 30%;
+
+  }
+
+.nyt {
+    background: #EB7528 url(images/trump-head.png) right center no-repeat;
+  	background-size:30%;
+  	background-position-x: 85%;
+  }
+
+.kep {
+	background: #95D8BA url(images/tractor.png) left bottom fixed repeat-y;
+  	background-size:40%;
+  	background-position-x: 10%;
+  	}
+
+.blog {
+    background: #F3EEE8 url(images/blog.png) right bottom no-repeat;
+  	background-size:30%;
+  	background-position-x: 85%;
+  }
+
+.shrimp  {
+  background: #83748C url(images/shrimp.png) left bottom fixed no-repeat;
+  background-size: 100% auto;
+
+}
+.about {
+  background: olivedrab url(images/social.png) top center fixed no-repeat;
+  	background-size:30%;
+  	background-position: 85% 40%;
+}
+
+.about li {
+	list-style-type: none;
+	display: inline-block;
+	padding: .3em;
+}
+.about ul {
+	margin: 2em 0;
+}
+.about img {
+	height: 5em;
+	width: 5em;
+}
+.fp {
+  background: #000 url(images/future.jpg) left top fixed no-repeat;
+  background-size: 140% auto;
+  background-position: -15% 80%;
+}
+
+
+.street {
+    background: darkslategrey url(images/ryu.png) left bottom no-repeat;
+    background-size: 41.5%;
+    background-position-x: 15%;
+}
+
+.list-app {
+	background: aliceblue url(images/list.png) right center fixed no-repeat;
+	background-size: 30%;
+	background-position-x: 85%;
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0
+}
+
+html[xmlns] .clearfix {
+  display: block;
+  }
+
+.info {
+    width: 40%;
+    padding: 5em 0;
+    display: flex;
+    margin: 0 0 0 54%;
+  }
+.we .info {
+  margin: 0 0 0 40%;
+  text-align: center;
+  }
+
+.text_block {
+width: 100%
+}
+
+.dark .text_block {
+	color: #fff;
+}
+
+.left_aligned {
+    margin: 0 0 0 6%;
+}
+
+/*Footer_________________________________________________________________________full */
+
+footer {
+  width: 100%;
+  clear: both;
+  background: #fff;
+  margin: -9px 0 0 0
+}
+footer small {
+  width: 100%;
+  text-align: center;
+  padding: 6em 0;
+  display: block
+}
+@media (max-width: 1025px) {}
+	.we {
+    background: #09063D url(images/manda-face.png) left bottom no-repeat;
+	}
+	.list-app {
+		background: aliceblue url(images/list.png) right no-repeat;
+		background-position-x:95%;
+		background-size: 40%;
+	}
+	.nyt {
+		background-size: 25%;
+	}
+	.blog {
+   		background-size:20%;
+	}
+	.shrimp {
+    background: #83748C url(images/shrimp.png) left bottom no-repeat;
+    background-size: 100% auto;
+	}
+	.about {
+    background: olivedrab url(images/social.png) top right no-repeat;
+    background-size: 45%
+}
+
+@media (max-width: 1020px) {
+
+	body {
+		font-size: 90%;
+		padding-top: 4em;
+	}
+
+
+/*Masthead Navigation bar ___________________________________________________ipad Portrait________770*/
+
+
+	.masthead {
+	 	padding:1em 0;
+	 	overflow: auto;
+
+	 }
+	 .inner {
+	    width: 80%;
+	    margin: 1em auto;
+	  }
+
+
+	  .masthead h1 {
+	  	margin: 1em auto 0 auto;
+	  	width: 16.9em;
+	  	float:none;
+	  	font-size: 170%;
+	  	display: flex;
+	  }
+
+	  .menu li {
+	  	padding: 1em;
+	  	border: 2px solid;
+	  	margin:.3em 1em;
+	  	width: 9em;
+	  	float:none;
+	  }
+
+	.menu li:hover, .menu li:active {
+  		color: #fff;
+  		background-color: #333;
+	}
+
+
+  .menu {
+  	padding: 3em .1em;
+  	overflow: visible;
+  	text-align: center;
+  	display: inline-flex;
+  	width: 100%;
+  	margin: 0;
+  	font-size: 120%;
+  }
+
+	.menu-inner {
+	  	margin: 0 auto;
+	  	overflow: auto;
+	  	 background: transparent;
+	  	 display: inline-flex;
+	  }
+  
+  .masthead a {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: auto;
+    background: transparent;
+    
+  }
+
+/*Text boxes (including 1st welcome box) ____________________________ipad Portrait________770*/
+
+
+	p, .text_block ul {
+	    font-size: 1.3em;
+	    line-height: 1.4em;
+  	}
+  	.we .info, .info {
+		width: 50%;
+		margin: 0 0 0 50%;
+		padding: 4em 0 8em 0;
+		background: #fff;
+	}
+
+	.dark .text_block, .text_block {
+		width: 70%;
+		margin: 0 auto;
+		color: #333;
+	}
+
+	.left_aligned {
+		margin: 0;
+	}
+
+	.fullscreen {
+		padding: 0;
+	}
+
+	#cursive-big {
+	  	padding: 0 1em;
+	  	font-size: 300%;
+	  }
+
+/*Sections*/
+	.we {
+		 background: #09063D url(images/intro.jpg) left center no-repeat;
+		 background-size: 200%;
+		 background-position-y:100%;
+	 }
+
+	 .about {
+	 	background-position-y: 15%;
+	 }
+
+	 .about img {
+	 	height: 1.7em;
+	 	width: 1.7em;
+	 }
+
+	 .fp {
+	 	background: #000 url(images/future.jpg) left bottom no-repeat;
+	  	background-size: 100% auto;
+	  }
+
+	 .list-app {
+		background: aliceblue url(images/list.png) right no-repeat;
+		background-size: 30%;
+		background-position-x: 85%;
+}
+
+	.dark .live {
+	    border: solid 2px #333;
+	    color: #333;
+	  }
+	  
+	.dark .live:hover {
+	    background: #333;
+	    color: #fff;
+	}
+
+
+
+/* ____________________________________________________________________ipad Portrait________770____*/
+
+	.we {
+		background: #09063D url(images/manda-face.png) left bottom no-repeat;
+	}
+
+}
+
+@media (max-width: 570px){ /*_________________________________________________iphone landscape________570____*/
+	
+	.info {
+		text-align: center;
+	}
+	/*Navigation*/
+	.menu {
+    padding: 2em .1em;
+	}
+
+	.menu li {
+    margin: .2em;
+	}
+
+	.inner {
+		width: 90%
+	}
+
+	/*Sections*/
+
+	.we {
+		background-size: 300%;
+	}
+
+		#cursive-big {
+		  	padding: 0;
+		  	font-size: 240%;
+
+
+
+	.about {
+	 	background: #17A366 url(images/social.jpg) right top no-repeat;
+	 	background-size: 140%;	
+	 }
+}
+@media (max-width: 520px) { /*___________________________________________iphone portrait________________450*/
+
+	body {
+    font-size: 100%;
+        -webkit-hyphens: none;
+	}
+
+    .fullscreen {
+    padding: 14em 0 0 0
+  }
+
+	/*Masthead Navigation bar _______________________________________________iphone portrait________________450*/
+
+  .masthead {
+    padding: 1.75em 0;
+    text-align: center
+  }
+  
+  .masthead h1 {
+  	width:100%;
+    float: none;
+  }
+
+  .menu {
+		float: none;
+		width: 95%;
+	    padding: 2em .1em;	
+  }
+
+  .menu li {
+  	margin: .4em auto;
+  	display: flex;
+  	overflow: visible;
+  }
+
+  .inner {
+    width: 94%;
+    /*max-width: 85em;*/
+    margin: 0 auto;
+	}
+	.menu-inner {
+		overflow: auto;
+		display: block;
+	}
+
+	/*Text boxes (including 1st welcome box) _____________________________________________450*/
+
+  p, .text_block ul {
+    font-size: 1.3em;
+    line-height: 1.4em;
+  }
+  
+  .text_block h1, .text_block h2 {
+    width: 100%;
+    text-align: center;
+    line-height: 1.3em;
+    margin: 0 0 0.8em 0;
+	}
+	.text_block ul {
+    padding: 0 0 .2em 0;
+  }
+
+  .we .info, .info {
+    width: 100%;
+    margin: 0;
+    padding: 4em 0;
+  }
+
+  
+  .left_aligned {
+    margin: 0
+  }
+  
+  .text_block {
+    width: 85%
+  }
+
+	.we {
+	    background-size: 30%;
+	    background-position: 0% 6%;
+	}
+
+	.list-app {
+		background-size:4;
+		background-position: 50% 8%;
+	}
+
+	.nyt {
+	  	background-size: 41%;
+	  	background-position: 50% 4%;
+	}
+
+	.kep {
+	  	background-size: 100% auto;
+	  	}
+
+	.blog {
+	   background-position: 73% 19%;
+	  }
+
+	.shrimp  {
+	  	background-size: 175% auto;
+	  	background-position-y: 0%;
+	}
+	.about {
+	  background-size: 65%;
+	  background-position: 46% 5%;
+	}
+	.fp {
+	    background: #000 url(images/future.jpg) left top;
+	    background-size: 250% auto;
+   	 	background-position: -10% 86%;
+	}
+	.street {
+		background-position: 45% 8%;
+	}
+
+}
+
+
+	/*Footer ____________________________________________________________________________550*/
+@media (-webkit-min-device-pixel-ratio: 1.5) {
+  h1 span {
+    margin: 0 0 0 -1px
+  }
+}
