@@ -10,6 +10,7 @@ ul,
 li,
 footer,
 header,
+nav,
 section,
 h1,
 span,
@@ -33,6 +34,8 @@ small {
   background: transparent;
   text-decoration: none;
   /*outline: 1px dotted green;*/
+  -webkit-border-fit: scale;
+  z-index: 1;
 }
 
 header,
@@ -46,7 +49,8 @@ h2,
 h3,
 h4 {
   font-weight: 700;
-  -webkit-hyphens: none; 
+  -webkit-hyphens: none;
+  position: static;
 }
 
 body {
@@ -75,6 +79,11 @@ p {
 a:-webkit-any-link {
     color: inherit;
     text-decoration: none;
+    cursor: pointer;
+    overflow: visible;
+ }
+ .faded {
+ 	opacity: .3;
  }
 
 .live{
@@ -121,6 +130,7 @@ a:-webkit-any-link {
 .masthead {
   width: 100%;
   padding: 4em 1em 6em 1em;
+      line-height: 130%;
 }
 
 .inner {
@@ -151,9 +161,12 @@ a:-webkit-any-link {
   float: right;
   padding: .5em 1em 0 1em;
   line-height: 1em;
+
 }
 .menu a {
   display: inline-block;
+   position: static;
+  overflow: visible;
 }
 
 .menu li:active{
@@ -169,8 +182,32 @@ a:-webkit-any-link {
 .we {
     background: #09063D url(images/manda-face.png) left bottom fixed no-repeat;
 	background-size: 30%;
-
   }
+
+ .trad {
+    background: cadetblue url(images/trad-is-rad.png) left center fixed no-repeat;
+  	background-size:35%;
+  	background-position-x: 12%;
+  }
+
+.hot-cold {
+	background: rebeccapurple url(images/hot-cold.png) right center no-repeat;
+	background-size:30%;
+	background-position-x: 85%;
+}
+
+
+.kep {
+	background: #95D8BA url(images/tractor.png) left bottom fixed repeat-y;
+  	background-size:40%;
+  	background-position-x: 10%;
+  	}
+
+.list-app {
+	background: aliceblue url(images/list.png) right center fixed no-repeat;
+	background-size: 30%;
+	background-position-x: 85%;
+}
 
 .nyt {
     background: #EB7528 url(images/trump-head.png) right center no-repeat;
@@ -178,11 +215,7 @@ a:-webkit-any-link {
   	background-position-x: 85%;
   }
 
-.kep {
-	background: #95D8BA url(images/tractor.png) left bottom fixed repeat-y;
-  	background-size:40%;
-  	background-position-x: 10%;
-  	}
+
 
 .blog {
     background: #F3EEE8 url(images/blog.png) right bottom no-repeat;
@@ -220,17 +253,13 @@ a:-webkit-any-link {
 }
 
 
-.street {
+.github {
     background: darkslategrey url(images/ryu.png) left bottom no-repeat;
     background-size: 41.5%;
     background-position-x: 15%;
 }
 
-.list-app {
-	background: aliceblue url(images/list.png) right center fixed no-repeat;
-	background-size: 30%;
-	background-position-x: 85%;
-}
+
 
 .clearfix:after {
   content: "";
@@ -268,6 +297,12 @@ width: 100%
     margin: 0 0 0 6%;
 }
 
+#randomPic {
+	background: url(images/twitter_round.png) right no-repeat;
+	background-size: 30%;
+}
+}
+
 /*Footer_________________________________________________________________________full */
 
 footer {
@@ -282,7 +317,7 @@ footer small {
   padding: 6em 0;
   display: block
 }
-@media (max-width: 1025px) {}
+@media (max-width: 1025px) {
 	.we {
     background: #09063D url(images/manda-face.png) left bottom no-repeat;
 	}
@@ -304,6 +339,7 @@ footer small {
 	.about {
     background: olivedrab url(images/social.png) top right no-repeat;
     background-size: 45%
+	}
 }
 
 @media (max-width: 1020px) {
@@ -411,7 +447,7 @@ footer small {
 
 /*Sections*/
 	.we {
-		 background: #09063D url(images/intro.jpg) left center no-repeat;
+		 background: #09063D url(images/intro.jpg) left bottom no-repeat;
 		 background-size: 200%;
 		 background-position-y:100%;
 	 }
@@ -419,6 +455,18 @@ footer small {
 	 .about {
 	 	background-position-y: 15%;
 	 }
+
+	 .list-app {
+		background: aliceblue url(images/list.png) right no-repeat;
+		background-size: 30%;
+		background-position-x: 85%;
+	}
+
+	 .hot-cold {
+		background: lightblue url(images/hot-cold.png) right center no-repeat;
+    	background-size: 41%;
+    	background-position-x: 94%;
+	}
 
 	 .about img {
 	 	height: 1.7em;
@@ -429,12 +477,6 @@ footer small {
 	 	background: #000 url(images/future.jpg) left bottom no-repeat;
 	  	background-size: 100% auto;
 	  }
-
-	 .list-app {
-		background: aliceblue url(images/list.png) right no-repeat;
-		background-size: 30%;
-		background-position-x: 85%;
-}
 
 	.dark .live {
 	    border: solid 2px #333;
@@ -476,19 +518,17 @@ footer small {
 
 	/*Sections*/
 
-	.we {
-		background-size: 300%;
-	}
+	
 
 		#cursive-big {
 		  	padding: 0;
 		  	font-size: 240%;
-
+	}
 
 
 	.about {
 	 	background: #17A366 url(images/social.jpg) right top no-repeat;
-	 	background-size: 140%;	
+	 	background-size: 130%;	
 	 }
 }
 @media (max-width: 520px) { /*___________________________________________iphone portrait________________450*/
@@ -570,12 +610,23 @@ footer small {
 
 	.we {
 	    background-size: 30%;
-	    background-position: 0% 6%;
+	    background-position: 0% 0%;
+	}
+
+	.hot-cold {
+	background: lightblue url(images/hot-cold.png) top center no-repeat;
+	background-size: 11em;
+    background-position-y: 3%;
+	}
+
+	.trad {
+		background-position: 50% 3%;
+    	background-size: 30%;
 	}
 
 	.list-app {
-		background-size:4;
-		background-position: 50% 8%;
+		background-size:10.7em;
+		background-position: 50% 5%;
 	}
 
 	.nyt {
@@ -588,23 +639,27 @@ footer small {
 	  	}
 
 	.blog {
-	   background-position: 73% 19%;
+	    background: #F3EEE8 url(images/blog.png) right center no-repeat;
+		background-size: 40%;
+		background-position: 71% 0%;
 	  }
 
 	.shrimp  {
-	  	background-size: 175% auto;
-	  	background-position-y: 0%;
+	  	background: #83748C url(images/shrimp.png) left top no-repeat;
+	  	background-size: 150% auto;
+	  	background-position-y: -2em;
 	}
 	.about {
-	  background-size: 65%;
-	  background-position: 46% 3%;
+	  background-size: 140%;
+	  background-position-y:-9%;
+	 
 	}
 	.fp {
 	    background: #000 url(images/future.jpg) left top;
 	    background-size: 250% auto;
    	 	background-position: -10% 86%;
 	}
-	.street {
+	.github {
 		background-position: 45% 8%;
 	}
 
