@@ -354,30 +354,32 @@ footer small {
 
 
 	.masthead {
-	 	padding:1em 0;
+	 	padding:0;
 	 	overflow: auto;
 
 	 }
 	 .inner {
 	    width: 80%;
-	    margin: 1em auto;
+	    margin: auto;
 	  }
 
 
 	  .masthead h1 {
-	  	margin: 1em auto 0 auto;
-	  	width: 16.9em;
-	  	float:none;
+	  	margin: 2em auto;
+	  	max-width: 16.9em;
+	  	box-sizing: border-box;
 	  	font-size: 170%;
-	  	display: flex;
+	  	float: none;
+
 	  }
 
 	  .menu li {
 	  	padding: 1em;
-	  	border: 2px solid;
-	  	margin:.3em 1em;
-	  	width: 9em;
-	  	float:none;
+	  	margin:3%;
+	  	width: 5em;
+	  	background-color: gainsboro;
+	  	overflow: auto;
+	  	line-height: 1em;
 	  }
 
 	.menu li:hover, .menu li:active {
@@ -385,15 +387,19 @@ footer small {
   		background-color: #333;
 	}
 
-
+	body{
+		padding: 0;
+	}
   .menu {
-  	padding: 3em .1em;
-  	overflow: visible;
+  	/*padding: 3em .1em;*/
+  	overflow: auto;
   	text-align: center;
-  	display: inline-flex;
+  	float: none;
   	width: 100%;
   	margin: 0;
   	font-size: 120%;
+	display: inline-block;
+  	box-sizing: border-box;
   }
 
 	.menu-inner {
@@ -407,8 +413,8 @@ footer small {
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
-    overflow: auto;
     background: transparent;
+    overflow: auto;
     
   }
 
@@ -463,7 +469,7 @@ footer small {
 	}
 
 	 .hot-cold {
-		background: lightblue url(images/hot-cold.png) right center no-repeat;
+		background: rebeccapurple url(images/hot-cold.png) right center no-repeat;
     	background-size: 41%;
     	background-position-x: 94%;
 	}
@@ -505,11 +511,11 @@ footer small {
 	}
 	/*Navigation*/
 	.menu {
-    padding: 2em .1em;
+    /*padding: 2em .1em;*/
 	}
 
 	.menu li {
-    margin: .2em;
+    /*margin: .2em;*/
 	}
 
 	.inner {
@@ -557,12 +563,14 @@ footer small {
   .menu {
 		float: none;
 		width: 95%;
-	    padding: 2em .1em;	
+	    /*padding: 2em .1em;	*/
   }
 
   .menu li {
   	margin: .4em auto;
-  	display: flex;
+  	display: inline;
+  	width: 100%;
+  	box-sizing: content-box;
   	overflow: visible;
   }
 
@@ -597,6 +605,7 @@ footer small {
     width: 100%;
     margin: 0;
     padding: 4em 0;
+    background-position-x: 0%;
   }
 
   
@@ -614,7 +623,7 @@ footer small {
 	}
 
 	.hot-cold {
-	background: lightblue url(images/hot-cold.png) top center no-repeat;
+	background: rebeccapurple url(images/hot-cold.png) top center no-repeat;
 	background-size: 11em;
     background-position-y: 3%;
 	}
